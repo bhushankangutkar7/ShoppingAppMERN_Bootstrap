@@ -1,0 +1,50 @@
+/* Navbar */
+
+.navbar{
+  min-width: 400px;
+  max-width: auto;
+}
+
+/*Login and Signup*/
+.login{
+  min-width: 400px;
+  max-width: 500px;
+}
+
+.input{
+  width: 90%
+}
+
+.icon {
+  color: rgb(253, 253, 253);
+  width: 8%;
+  background-color: rgb(135, 134, 134);
+}
+
+.eIcon:hover{
+  background-color: rgb(104, 103, 103);
+  scale: 1.1;
+}
+
+.logInBtn {
+  width: 100%;
+  
+}
+
+/*Home page*/
+
+* {box-sizing:border-box}
+
+.slideShowContainer {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slide{
+  /* display : none; */
+}
+
+.arrowLeft, .arrowRight {
+  z-index: 10;
+}
