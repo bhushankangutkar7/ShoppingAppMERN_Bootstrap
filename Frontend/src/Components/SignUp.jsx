@@ -10,7 +10,7 @@ const SignUp = () => {
   return (
     <>
       <div
-        className="container d-flex flex-column justify-content-center bg-light mt-5 mb-5 border border-grey rounded-4 login"
+        className="container d-flex flex-column justify-content-center rounded-4 loginContainer"
         style={{ minWidth: "400px", maxWidth: "500px" }}
       >
         <h4 className="align-self-center mt-4">Sign Up</h4>
@@ -106,6 +106,17 @@ const SignUp = () => {
             </div>
           </div>
 
+          <div className="mb-3 ms-1 form-check">
+            <input
+              type="checkbox"
+              className="form-check-input"
+              id="exampleCheck1"
+            />
+            <label className="form-check-label" htmlFor="exampleCheck1">
+              Keep me Logged In
+            </label>
+          </div>
+
           <div className="d-flex flex-row justify-content-center m-1">
             <button
               type="submit"
@@ -115,8 +126,8 @@ const SignUp = () => {
             </button>
           </div>
 
-          <Link to="/sign-up">
-            <p className="mb-3 ms-1">Don't have an Account?</p>
+          <Link to="/login">
+            <p className="mb-3 ms-1">Already an User? Log In</p>
           </Link>
         </form>
       </div>

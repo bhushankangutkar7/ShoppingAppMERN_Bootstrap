@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
   const [visibility, setVisibilty] = useState("false");
@@ -10,7 +10,7 @@ const Login = () => {
   return (
     <>
       <div
-        className="container d-flex flex-column justify-content-center bg-light mt-5 border border-grey rounded-4 login"
+        className="container d-flex flex-column justify-content-center rounded-4 loginContainer"
         style={{ minWidth: "400px", maxWidth: "500px" }}
       >
         <h4 className="align-self-center mt-4">Log In</h4>
@@ -88,9 +88,9 @@ const Login = () => {
             </button>
           </div>
 
-          <Link to="/sign-up">
+          <NavLink to="/sign-up">
             <p className="mb-3 ms-1">Don't have an Account?</p>
-          </Link>
+          </NavLink>
         </form>
       </div>
     </>
